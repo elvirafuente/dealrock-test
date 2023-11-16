@@ -1,0 +1,13 @@
+@import '../designTokens.module.scss';
+
+.header {
+  padding: map-get($tokens, 'app', 'Window', 'horizontalPadding') + px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid map-get($tokens, 'Color', 'stroke', '400');
+  &__logo {
+    width: 160px;
+  }
+}

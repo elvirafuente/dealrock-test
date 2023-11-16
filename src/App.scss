@@ -1,0 +1,22 @@
+@import './designTokens.module.scss';
+
+// body {
+//   //   background-color: map-get($tokens, 'Primary', '500');
+// }
+
+#root {
+  min-height: 100vh;
+  background-color: map-get($tokens, 'Background', '200');
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  flex-direction: column;
+  color: map-get($tokens, 'Color', 'text', '900');
+}
+
+.main {
+  flex: 1;
+}
+
+.text-link {
+  color: map-get($tokens, 'Text Link', '500');
+}

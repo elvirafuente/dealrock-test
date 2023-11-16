@@ -1,12 +1,30 @@
+import '../../styles/footer.scss';
+
 function Footer() {
   return (
-    <footer>
-      footer
+    <footer className='footer'>
       <nav>
-        <ul>
-          <li>Aviso legal</li>
-          <li>Privacidad</li>
-          <li>Política de cookies</li>
+        <ul className='footer__menu'>
+          <li>
+            <a href='https://dealrock.com/' target='__blank'>
+              Regístrate
+            </a>
+          </li>
+          <li>
+            <a href='https://dealrock.com/' target='__blank'>
+              Aviso legal
+            </a>
+          </li>
+          <li>
+            <a href='https://dealrock.com/' target='__blank'>
+              Privacidad
+            </a>
+          </li>
+          <li>
+            <a href='https://dealrock.com/' target='__blank'>
+              Política de cookies
+            </a>
+          </li>
         </ul>
       </nav>
     </footer>

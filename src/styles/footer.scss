@@ -1,0 +1,13 @@
+@import '../designTokens.module.scss';
+
+.footer {
+  border-top: 1px solid map-get($tokens, 'Color', 'stroke', '400');
+  padding: map-get($tokens, 'app', 'Window', 'horizontalPadding') + px;
+}
+
+.footer__menu {
+  display: flex;
+  flex-direction: row;
+  gap: map-get($tokens, 'paragraphSpacing', '24') + px;
+  font-size: map-get($tokens, 'fontSize', 'button ', '14') + px;
+}
