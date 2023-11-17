@@ -10,4 +10,46 @@
   &__logo {
     width: 160px;
   }
+
+  &__menu-navigation {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: map-get($tokens, 'spacing', 'xl') + px;
+    font-weight: 500;
+  }
+
+  &__menu-user {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+}
+
+.header__private-content {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  gap: 80px;
+}
+
+.user-menu__button {
+  width: 56px;
+  height: 56px;
+  background-color: map-get($tokens, 'Background', '0');
+  border-radius: map-get($tokens, 'borderRadius', 'm') + px;
+}
+
+.user-item__container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user_fullname {
+  font-weight: 500;
+}
+
+.user_avatar {
+  object-fit: cover;
 }

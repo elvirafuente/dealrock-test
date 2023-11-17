@@ -136,7 +136,7 @@ $dr-paragraph-indent-0: 0px !default;
 $dr-form-form-vertical-padding: 24 !default;
 $dr-form-form-horizontal-padding: 36 !default;
 $dr-form-inputs-horizontal-padding: 0 !default;
-$dr-form-inputs-item-spacing: 20 !default;
+$dr-form-inputs-item-spacing: 16 !default;
 $dr-form-inputs-vertical-padding: 0 !default;
 $dr-form-buttons-width: 100 !default;
 $dr-form-buttons-padding-top: 60 !default;
@@ -1158,3 +1158,9 @@ $tokens: (
     ),
   ),
 );
+
+:export {
+  stroke400: $dr-color-stroke-400;
+  borderRadiusS: $dr-border-radius-s;
+  primary500: $dr-primary-500;
+}

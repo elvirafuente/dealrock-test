@@ -1,9 +1,5 @@
 @import './designTokens.module.scss';
 
-// body {
-//   //   background-color: map-get($tokens, 'Primary', '500');
-// }
-
 #root {
   min-height: 100vh;
   background-color: map-get($tokens, 'Background', '200');
@@ -15,6 +11,9 @@
 
 .main {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-link {

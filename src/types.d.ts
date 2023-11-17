@@ -9,3 +9,10 @@ export interface UserLogin {
   username: Username;
   password: Password;
 }
+
+export interface UserInfo {
+  id: string;
+  username: string;
+  full_name: string;
+  avatar: string;
+}

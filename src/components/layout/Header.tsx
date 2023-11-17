@@ -1,4 +1,5 @@
 import PublicContent from './header/PublicContent';
+import PrivateContent from './header/PrivateContent';
 import { useAuth } from '../../hooks/useAuth';
 import logo from '../../assets/dealrock-logo.svg';
 import '../../styles/header.scss';
@@ -10,7 +11,7 @@ function Header() {
       <a href='https://dealrock.com/' target='__blank'>
         <img src={logo} alt='dealrock logo' className='header__logo' />
       </a>
-      {isAuthenticated ? <p>dentro</p> : <PublicContent />}
+      {isAuthenticated ? <PrivateContent /> : <PublicContent />}
     </header>
   );
 }

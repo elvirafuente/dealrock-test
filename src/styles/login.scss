@@ -1,0 +1,40 @@
+@import '../designTokens.module.scss';
+
+.login {
+  &__container {
+    width: map-get($tokens, 'app', 'Window', 'width') + px;
+    background-color: map-get($tokens, 'Background', '0');
+    border-radius: $dr-border-radius-m + px;
+    padding: map-get($tokens, 'form', 'form', 'verticalPadding') + px
+      map-get($tokens, 'form', 'form', 'horizontalPadding') + px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: map-get($tokens, 'fontSize', 'heading', '28') + px;
+    margin-bottom: map-get($tokens, 'spacing', 'md') + px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: map-get($tokens, 'form', 'inputs', 'itemSpacing') + px;
+    margin-bottom: 90px;
+  }
+
+  &__button {
+    background-color: map-get($tokens, 'Primary', '500');
+    border-radius: map-get($tokens, 'borderRadius', 's') + px;
+    padding: map-get($tokens, 'ButtonPrimary', 's', 'iconNone', 'paddingTop') +
+      px;
+    color: map-get($tokens, 'Color', 'text', '0');
+    font-weight: 500;
+    font-size: map-get($tokens, 'fontSize', 'body', '20') + px;
+    width: 100%;
+  }
+
+  &__message {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
