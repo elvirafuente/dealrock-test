@@ -30,8 +30,8 @@ export const AuthContextProvider: React.FC<AuthContextProviderProps> = ({
   const [isLoading, setIsLoading] = useState(false);
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [loginForm, setLoginForm] = useState<LoginForm>({
-    username: 'agezuraga@dealrock.com',
-    password: 'Prueba1+',
+    username: '',
+    password: '',
     remember: false,
   });
 
