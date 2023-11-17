@@ -11,6 +11,7 @@ interface AuthContextProps {
     event: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => void;
   formErrors: Partial<UserLogin> | null;
+  isLoading: boolean;
 }
 
 interface AuthContextProviderProps {
@@ -111,6 +112,7 @@ export const AuthContextProvider: React.FC<AuthContextProviderProps> = ({
         handleInputChange,
         loginForm,
         formErrors,
+        isLoading,
       }}
     >
       {children}

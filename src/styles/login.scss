@@ -31,6 +31,7 @@
     font-weight: 500;
     font-size: map-get($tokens, 'fontSize', 'body', '20') + px;
     width: 100%;
+    cursor: pointer;
   }
 
   &__message {
